@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: #EDEDED;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --skyblue: rgba(0,178,255,0.82);
+    --gray: rgb(180, 180, 180);
+}
+
+#root{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.dark-root{
+    background-color: #141414;
+} 
+
+.correct{
+    color: #3AB049;
+}
+
+.incorrect {
+    color: #fe0000;
+}
+
+.current-light{
+    background: var(--gray);
+}
+
+.current-dark{
+    background: #454545;
+}
+
+#header {
+    border-bottom: 1px solid white;
+    box-shadow: 2px 10px 23px -8px var(--skyblue);
+    -webkit-box-shadow: 2px 10px 23px -8px var(--skyblue);
+    -moz-box-shadow: 2px 10px 23px -8px var(--skyblue);
+}
+
+#caja-principal {
+    box-shadow: 2px 2px 25px 0px var(--skyblue);
+    -webkit-box-shadow: 2px 2px 25px 0px var(--skyblue);
+    -moz-box-shadow: 2px 2px 25px 0px var(--skyblue);    
+}
+
+#caja-principal select {
+    border-radius: 0.25rem
+}
+
+#resultados {
+    border-radius: 0.25rem;
+    box-shadow: 2px 2px 25px 0px var(--skyblue);
+    -webkit-box-shadow: 2px 2px 25px 0px var(--skyblue);
+    -moz-box-shadow: 2px 2px 25px 0px var(--skyblue);  
+}
+
+#palabras {
+    box-shadow: 0px 0px 25px 0px var(--skyblue);
+    -webkit-box-shadow: 0px 0px 25px 0px var(--skyblue);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 178, 255, 0.82);
+    border-color: rgb(223, 223, 223);
+}
+
+#writting {
+    background-color: var(--gray);
+}
+
+#icon {
+    height: 60px;
+    width: 60px;
+}
+.border-sky {
+    border-color: var(--skyblue);
+}
+
+.bg-sky {
+    background-color: var(--skyblue);
+}
+
+.color-sky {
+    color: var(--skyblue);
+}
+
+.span-results {
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    padding: 2px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.dark-span-results {
+    background-color: black;
+}
+
+.right-icon {
+    padding-top: 10px;
+}
+
+#title {
+    cursor: default;
+}
+
+#img {
+    height: 64px;
+    width: 64px;
+    margin-top: 10px;
+    margin-left: 9rem;
+    position: relative;
+    left: 15px;
+}
+
+/* .light-root {
+    background-image: url('../../public/assets/Images/white.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* .dark-root {
+    background-image: url('../../public/assets/Images/teclado-negro.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
