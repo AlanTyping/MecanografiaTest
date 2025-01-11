@@ -35,7 +35,7 @@ const TextBox = () => {
     }, [counterRowWords.counter, theme]);
 
   return (
-       <div id='palabras' className='border-2 h-32 overflow-hidden flex flex-wrap rounded'>
+       <div id='palabras' className='bg-transparent h-32 overflow-hidden flex flex-wrap rounded'>
            {
                words.map( word => ( 
                    <Word 

@@ -23,7 +23,7 @@ const Header = () => {
      }; 
 
   return (
-       <div id='header' className='w-full flex'>
+       <div id='header' className='w-full flex border-b dark:border-gray'>
            <img id='img' src='../assets/Images/flash.png' alt="flash" />
            <div className='mt-5 mb-5 flex'>
                <h1 href=".././public/index.html" id='title' className='font-lato text-4xl text-brown ml-4 dark:text-white'>Flash Typing</h1>

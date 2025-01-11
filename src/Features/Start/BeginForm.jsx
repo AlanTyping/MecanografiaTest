@@ -29,11 +29,11 @@ const BeginForm = ( { setCurrentMode } ) => {
     }
 
   return(
-    <div id='caja-principal' className='w-3/5 flex justify-center items-center border-4 rounded-md border-borderColor shadow-xl mt-20'>
+    <div id='caja-principal' className='w-3/5 flex justify-center items-center border-2 rounded-md border-gray shadow-xl mt-20'>
     <form className='flex flex-col font-lato text-xl items-center mt-8 mb-12'>
-        <div className='mb-4 '>
-            <p className='font-mochiPop color-sky text-2xl'>Check how fast you can type</p>
-            <p className='color-sky text-center font-lato mt-4'>Pick your test</p>
+        <div className='mb-4'>
+            <p className='font-mochiPop text-2xl dark:text-white font-bold'>Check how fast you can type</p>
+            <p className='text-center font-lato mt-4 dark:text-white'>Pick your test</p>
         </div>
         <div className='mt-2 mb-4'>
             <select 
@@ -64,7 +64,7 @@ const BeginForm = ( { setCurrentMode } ) => {
         <div>
             <button 
                 type='submit'
-                className='rounded bg-sky px-12 py-2'
+                className='rounded border-2 dark:text-white dark:border-gray px-12 py-2'
                 onClick={ handleStart }
             >
                 Start

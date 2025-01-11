@@ -85,7 +85,7 @@ const TypingBox = ( ) => {
   }
  
   return (
-    <div id='writting' className='flex flex-row items-center w-full mt-4 bg-trasnp h-16 rounded'>
+    <div id='writting' className='flex flex-row items-center border border-gray dark:border-gray w-full mt-12 h-16 rounded'>
       <input 
         type="text"
         name='typedWord'
@@ -94,7 +94,7 @@ const TypingBox = ( ) => {
         value={ formValues.typedWord }
         onChange={ handleInputChanges }
         onKeyDown = { handleKeyPressed }
-        className='w-3/4 h-3/4 py-2 outline-none text-2xl font-lato ml-4 px-2 rounded'
+        className='w-3/4 h-3/4 py-2 dark:text-white dark:bg-black outline-none text-xl font-lato ml-2 px-2 rounded'
       />
       <Timer isStarted={isStarted}/>
      <HomeButton />
